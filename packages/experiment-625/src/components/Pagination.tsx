@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from './Button';
 import { Text } from './Text';
 import { InlineStack } from './layout/InlineStack';
-import { colorsIcon } from '@brianAcme/stitch-tokens/colors.stylex';
+import { colorsIcon } from '@bmcwebdev/stitch-tokens/colors.stylex';
 
 interface PaginationProps {
   itemsPerPage: number;

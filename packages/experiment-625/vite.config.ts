@@ -28,8 +28,8 @@ export default defineConfig(() => ({
       : [
           styleX({
             libraries: [
-              '@brianAcme/stitch-tokens',
-              '@brianAcme/style-tokens',
+              '@bmcwebdev/stitch-tokens',
+              '@bmcwebdev/style-tokens',
             ],
           }),
         ]), // Only use stylexPlugin when not building
@@ -48,13 +48,13 @@ export default defineConfig(() => ({
         'react-aria-components',
         '@stylexjs/stylex',
         'vite-plugin-stylex',
-        '@brianAcme/stitch-tokens/colors.stylex',
-        '@brianAcme/stitch-tokens/fonts.stylex',
-        '@brianAcme/stitch-tokens/sizes.stylex',
-        '@brianAcme/stitch-tokens/layoutTokens.stylex',
-        '@brianAcme/style-tokens/colors.stylex',
-        '@brianAcme/style-tokens/fonts.stylex',
-        '@brianAcme/style-tokens/sizes.stylex',
+        '@bmcwebdev/stitch-tokens/colors.stylex',
+        '@bmcwebdev/stitch-tokens/fonts.stylex',
+        '@bmcwebdev/stitch-tokens/sizes.stylex',
+        '@bmcwebdev/stitch-tokens/layoutTokens.stylex',
+        '@bmcwebdev/style-tokens/colors.stylex',
+        '@bmcwebdev/style-tokens/fonts.stylex',
+        '@bmcwebdev/style-tokens/sizes.stylex',
       ],
       output: {
         globals: {

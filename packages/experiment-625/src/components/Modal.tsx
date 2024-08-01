@@ -8,9 +8,9 @@ import {
 } from 'react-aria-components';
 import { Button } from './Button';
 import { Box } from './Box';
-import { colors } from '@brianAcme/stitch-tokens/colors.stylex';
-import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+import { colors } from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { fonts } from '@bmcwebdev/stitch-tokens/fonts.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 
 const styles = stylex.create({
   modalOverlay: {

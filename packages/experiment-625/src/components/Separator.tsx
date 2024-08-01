@@ -2,7 +2,7 @@ import {
   Separator as RACSeparator,
   SeparatorProps,
 } from 'react-aria-components';
-import { colorsBorder } from '@brianAcme/stitch-tokens/colors.stylex';
+import { colorsBorder } from '@bmcwebdev/stitch-tokens/colors.stylex';
 
 import * as stylex from '@stylexjs/stylex';
 

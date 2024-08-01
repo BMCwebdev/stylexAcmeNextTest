@@ -13,7 +13,7 @@ import {
 } from './Field';
 import * as stylex from '@stylexjs/stylex';
 
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 import { styleXFocusRing } from './utils';
 
 

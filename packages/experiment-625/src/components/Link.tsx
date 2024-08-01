@@ -4,8 +4,8 @@ import {
   LinkRenderProps,
 } from 'react-aria-components';
 import * as stylex from '@stylexjs/stylex';
-import { colors, colorsText } from '@brianAcme/stitch-tokens/colors.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+import { colors, colorsText } from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 import { styleXFocusRing } from './utils';
 
 const linkStyle = stylex.create({

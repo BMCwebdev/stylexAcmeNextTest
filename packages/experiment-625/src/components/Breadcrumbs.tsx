@@ -8,8 +8,8 @@ import {
 } from 'react-aria-components';
 import { Link } from './Link';
 import * as stylex from '@stylexjs/stylex';
-import { colorsIcon } from '@brianAcme/stitch-tokens/colors.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+import { colorsIcon } from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 
 const s = stylex.create({
   breadcrumbs: {

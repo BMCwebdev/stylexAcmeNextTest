@@ -4,8 +4,8 @@ import { tv } from 'tailwind-variants';
 import * as stylex from '@stylexjs/stylex';
 import {
   colorsBorder
-} from '@brianAcme/stitch-tokens/colors.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+} from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 
 export const focusRing = tv({
   base: 'outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2',

@@ -1,8 +1,8 @@
 import React from 'react';
 import * as stylex from '@stylexjs/stylex';
 
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
-import { tileColumns } from '@brianAcme/stitch-tokens/layoutTokens.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
+import { tileColumns } from '@bmcwebdev/stitch-tokens/layoutTokens.stylex';
 
 type ComponentType = 'div' | 'span';
 export type Space = '0' | '25' | '50' | '100' | '200' | '300' | '400' | '500';

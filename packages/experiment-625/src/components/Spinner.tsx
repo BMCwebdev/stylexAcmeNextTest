@@ -1,6 +1,6 @@
 import * as stylex from '@stylexjs/stylex';
-import { colorsText } from '@brianAcme/stitch-tokens/colors.stylex';
-import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
+import { colorsText } from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { fonts } from '@bmcwebdev/stitch-tokens/fonts.stylex';
 import { Stack } from './layout/Stack';
 
 const styles = stylex.create({

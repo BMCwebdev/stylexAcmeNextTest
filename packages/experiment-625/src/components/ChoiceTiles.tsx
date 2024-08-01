@@ -8,8 +8,8 @@ import {
 } from 'react-aria-components';
 import { Column, Columns } from './layout/Columns';
 import { Stack } from './layout/Stack';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
-import { colors, colorsBackground, colorsBorder, colorsShadow, colorsText } from '@brianAcme/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
+import { colors, colorsBackground, colorsBorder, colorsShadow, colorsText } from '@bmcwebdev/stitch-tokens/colors.stylex';
 import { styleXFocusRing } from './utils';
 import * as stylex from '@stylexjs/stylex';
 

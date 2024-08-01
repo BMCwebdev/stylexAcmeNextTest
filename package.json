@@ -1,6 +1,6 @@
 {
-  "name": "@brianAcme/stitch-monorepo",
-  "description": "brianAcme Design System Monorepo",
+  "name": "@bmcwebdev/stitch-monorepo",
+  "description": "bmcwebdev Design System Monorepo",
   "workspaces": [
     "packages/experiment-625/",
     "packages/stitch-tokens/"

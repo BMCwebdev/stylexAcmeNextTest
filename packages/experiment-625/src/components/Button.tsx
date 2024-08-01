@@ -5,9 +5,9 @@ import {
 } from 'react-aria-components';
 import * as stylex from '@stylexjs/stylex';
 
-import { colorsAlpha, colorsBackground, colorsBorder, colorsIcon, colorsShadow, colorsSymantic, colorsText } from '@brianAcme/stitch-tokens/colors.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
-import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
+import { colorsAlpha, colorsBackground, colorsBorder, colorsIcon, colorsShadow, colorsSymantic, colorsText } from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
+import { fonts } from '@bmcwebdev/stitch-tokens/fonts.stylex';
 import { styleXFocusRing } from './utils';
 
 export interface ButtonProps extends RACButtonProps {

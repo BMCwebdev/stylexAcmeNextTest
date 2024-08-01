@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
-import { colors } from '@brianAcme/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
+import { colors } from '@bmcwebdev/stitch-tokens/colors.stylex';
 import type {StyleXStyles} from '@stylexjs/stylex';
 import * as stylex from '@stylexjs/stylex';
 

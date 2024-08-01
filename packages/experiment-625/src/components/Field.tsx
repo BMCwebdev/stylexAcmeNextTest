@@ -23,9 +23,9 @@ import {
   colorsBorder,
   colorsFeedback,
   colorsText,
-} from '@brianAcme/stitch-tokens/colors.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
-import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
+} from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
+import { fonts } from '@bmcwebdev/stitch-tokens/fonts.stylex';
 
 const fieldStyle = stylex.create({
   base: {

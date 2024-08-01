@@ -10,9 +10,9 @@ import {
 import {
   colorsIcon,
   colorsText,
-} from '@brianAcme/stitch-tokens/colors.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
-import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
+} from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
+import { fonts } from '@bmcwebdev/stitch-tokens/fonts.stylex';
 
 export interface InlineFeedbackProps {
   type: 'success' | 'warning' | 'critical' | 'info' | 'tip' | undefined;

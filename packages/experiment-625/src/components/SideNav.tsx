@@ -10,11 +10,11 @@ import * as stylex from '@stylexjs/stylex';
 import { PageLayoutContext } from './PageLayoutProvider';
 import { Separator } from './Separator';
 import { SideNavButton } from './SideNavButton';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 import { styleXFocusRing } from './utils';
 import { Text } from './Text';
 
-import { colors, colorsBackground, colorsBorder, colorsShadow, colorsIcon } from '@brianAcme/stitch-tokens/colors.stylex';
+import { colors, colorsBackground, colorsBorder, colorsShadow, colorsIcon } from '@bmcwebdev/stitch-tokens/colors.stylex';
 
 const MAXSMALL = '@media (max-width: 479px)';
 const MINSMALL = '@media (min-width: 480px)';

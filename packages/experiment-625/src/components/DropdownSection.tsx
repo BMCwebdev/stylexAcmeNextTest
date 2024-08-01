@@ -11,7 +11,7 @@ import { Header } from "./Header";
 import * as stylex from '@stylexjs/stylex';
 
 import { Text } from "./Text";
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 
 
 const dropdownSectionStyles = stylex.create({

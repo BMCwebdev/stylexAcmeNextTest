@@ -11,8 +11,8 @@ import {
 } from 'react-aria-components';
 import { Description, FieldError, Label } from './Field';
 
-import { colorsBackground, colorsBorder, colorsSymantic, colorsText } from '@brianAcme/stitch-tokens/colors.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+import { colorsBackground, colorsBorder, colorsSymantic, colorsText } from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 
 export interface CheckboxGroupProps
   extends Omit<AriaCheckboxGroupProps, 'children'> {

@@ -1,8 +1,8 @@
 import { ForwardedRef, forwardRef } from 'react';
 import { Text as AriaText, TextProps as AriaTextProps } from 'react-aria-components'
 import * as stylex from '@stylexjs/stylex';
-import { colorsText } from '@brianAcme/stitch-tokens/colors.stylex';
-import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
+import { colorsText } from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { fonts } from '@bmcwebdev/stitch-tokens/fonts.stylex';
 
 type TextColors = 'default' | 'inverse' | 'secondary' | 'disabled';
 type TextSizes = 'small' | 'medium' | 'large' | 'xlarge';

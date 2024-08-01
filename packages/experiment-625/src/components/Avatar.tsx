@@ -3,9 +3,9 @@
 import * as React from "react";
 import * as stylex from '@stylexjs/stylex';
 import type {StyleXStyles} from '@stylexjs/stylex';
-import { colorsDecorative } from '@brianAcme/stitch-tokens/colors.stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
-import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
+import { colorsDecorative } from '@bmcwebdev/stitch-tokens/colors.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
+import { fonts } from '@bmcwebdev/stitch-tokens/fonts.stylex';
 
 const pulse = stylex.keyframes({
   '0%': { backgroundColor: 'rgba(255, 255, 255, 0.1)' },

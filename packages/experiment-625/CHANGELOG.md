@@ -1,4 +1,4 @@
-# @brianAcme/experiment-625
+# @bmcwebdev/experiment-625
 
 ## 0.0.5
 

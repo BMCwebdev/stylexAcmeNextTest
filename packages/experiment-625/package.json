@@ -1,5 +1,5 @@
 {
-  "name": "@brianAcme/experiment-625",
+  "name": "@bmcwebdev/experiment-625",
   "description": "Experiment 625 Component Library ",
   "version": "0.0.27",
   "type": "module",
@@ -34,14 +34,14 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "peerDependencies": {
-    "@brianAcme/stitch-tokens": "^0.0.11",
+    "@bmcwebdev/stitch-tokens": "^0.0.11",
     "@stylexjs/stylex": "^0.5.1",
     "react": "^18.2.0",
     "react-aria-components": "^1.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@brianAcme/stitch-tokens": "^0.0.11",
+    "@bmcwebdev/stitch-tokens": "^0.0.11",
     "@chromatic-com/storybook": "^1.3.3",
     "@storybook/addon-essentials": "^8.0.9",
     "@storybook/addon-interactions": "^8.0.9",

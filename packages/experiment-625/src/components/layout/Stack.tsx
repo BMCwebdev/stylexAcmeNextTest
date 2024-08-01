@@ -1,6 +1,6 @@
 import React from 'react';
 import * as stylex from '@stylexjs/stylex';
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
 
 // would be nice to gather re-useable types like this into a globalTypes file.
 type AlignContent = 'normal' | 'start' | 'center' | 'end' | 'flexStart' | 'flexEnd' | 'baseline' | 'firstBaseline' | 'lastBaseline' | 'spaceBetween' | 'spaceAround' | 'spaceEvenly' | 'stretch' | 'safeCenter' | 'unsafeCenter' | 'inherit' | 'initial' | 'revert' | 'revertLayer' | 'unset';

@@ -6,8 +6,8 @@ import {
 import React from 'react';
 import * as stylex from '@stylexjs/stylex';
 
-import { colorsElevation, colorsShadow } from "@brianAcme/stitch-tokens/colors.stylex";
-import { sizes } from "@brianAcme/stitch-tokens/sizes.stylex";
+import { colorsElevation, colorsShadow } from "@bmcwebdev/stitch-tokens/colors.stylex";
+import { sizes } from "@bmcwebdev/stitch-tokens/sizes.stylex";
 
 export interface PopoverProps extends Omit<AriaPopoverProps, 'children'> {
   showArrow?: boolean;

@@ -15,9 +15,9 @@ In the meantime, to check out what is here so far...
 
 If you want to install this library in another app you will need to install the following in your App
 
-- `npm install @brianAcme/stitch`
-- `npm install @brianAcme/stitch-tokens`
-- `npm install @brianAcme/style-tokens`
+- `npm install @bmcwebdev/stitch`
+- `npm install @bmcwebdev/stitch-tokens`
+- `npm install @bmcwebdev/style-tokens`
 - `npm install react-aria-components`
 - `npm install @stylexjs/stylex`
   - You will need a compliler for stylex. Vist their [installation page](https://stylexjs.com/docs/learn/installation/) for more information and eslint installation.

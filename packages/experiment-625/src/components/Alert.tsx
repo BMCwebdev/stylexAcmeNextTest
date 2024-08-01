@@ -1,7 +1,7 @@
 import * as stylex from '@stylexjs/stylex';
 import { Heading } from 'react-aria-components';
 import { Box, BoxProps } from './Box';
-import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
+import { fonts } from '@bmcwebdev/stitch-tokens/fonts.stylex';
 
 const styles = stylex.create({
   boxWrapper: {

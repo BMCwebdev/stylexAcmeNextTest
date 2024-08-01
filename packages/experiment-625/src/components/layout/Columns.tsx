@@ -1,8 +1,8 @@
 import React, { createContext, useContext } from 'react';
 import * as stylex from '@stylexjs/stylex';
 
-import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
-import { column } from '@brianAcme/stitch-tokens/layoutTokens.stylex';
+import { sizes } from '@bmcwebdev/stitch-tokens/sizes.stylex';
+import { column } from '@bmcwebdev/stitch-tokens/layoutTokens.stylex';
 
 const SMALL = '@media (max-width: 767px)';
 const MEDIUM = '@media (max-width: 1023px)';
