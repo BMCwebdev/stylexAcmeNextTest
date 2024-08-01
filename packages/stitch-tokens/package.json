@@ -1,0 +1,14 @@
+{
+  "name": "@brianAcme/stitch-tokens",
+  "version": "0.0.11",
+  "description": "Design Tokens",
+  "exports": {
+    "./colors.stylex": "./colors.stylex.js",
+    "./fonts.stylex": "./fonts.stylex.js",
+    "./sizes.stylex": "./sizes.stylex.js",
+    "./layoutTokens.stylex": "./layoutTokens.stylex.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

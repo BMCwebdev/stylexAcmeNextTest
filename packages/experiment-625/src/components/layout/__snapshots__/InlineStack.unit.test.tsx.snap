@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InlineStack > renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="InlineStack__displayStyles.flex x78zum5 InlineStack__flexWrapStyles.nowrap xozqiw3 InlineStack__alignStyles.start x7a106z InlineStack__justifyStyles.start xlqzeqv InlineStack__gapStyles.50 xjcuxgg"
+  >
+    <div>
+      Child 1
+    </div>
+    <div>
+      Child 2
+    </div>
+    <div>
+      Child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;

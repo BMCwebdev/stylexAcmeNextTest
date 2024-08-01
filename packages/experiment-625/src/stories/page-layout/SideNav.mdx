@@ -1,0 +1,24 @@
+import { Meta, Canvas, Controls } from '@storybook/blocks';
+import * as SideNavStories from './SideNav.stories';
+
+<Meta title="Page Layout/SideNav" of={SideNavStories} />
+
+# Side Navigation
+
+The `SideNav` component is used to display a vertical navigation bar.
+
+### Example Usage
+
+```jsx
+<SideNav>
+  <SideNavItems navItems={firstSet} />
+  <Separator />
+  <SideNavItems navItems={secondSet} />
+  <SideNavFooter>
+    <SideNavItems navItems={[{ icon: 'LogOut', label: 'Log Out', to: '/logout' }]} />
+  </SideNavFooter>
+</SideNav>
+```
+### Stories
+<Canvas of={SideNavStories.Default} />
+<Canvas of={SideNavStories.WithFooter} />

@@ -1,0 +1,29 @@
+import { Meta, Canvas, Controls } from '@storybook/blocks';
+import * as SideNavFooterStories from './SideNavFooter.stories';
+
+<Meta title="Page Layout/SideNavFooter" of={SideNavFooterStories} />
+
+# SideNavFooter
+
+The `SideNavFooter` component is used to display additional footer content in the sidebar, including a help link.
+
+## Usage
+
+The `SideNavFooter` component expects the following props:
+- `children` (optional): Additional content to display in the footer.
+
+### Example
+
+```jsx
+import { SideNavFooter, SideNavItems, SideNavItem } from './SideNav';
+
+const footerItems: SideNavItem[] = [
+  { icon: 'HelpCircle', label: 'Help Center', to: '/help' },
+];
+
+<SideNavFooter>
+  <SideNavItems navItems={footerItems} />
+</SideNavFooter>
+```
+<Canvas of={SideNavFooterStories.Default} />
+<Controls />

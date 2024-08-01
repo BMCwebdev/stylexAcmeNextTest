@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Field components > renders description 1`] = `
+<div>
+  <span
+    class="Field__fieldStyle.base x1a241o7 x1mcqklo x1ihf77i Field__descStyle.base x155a4kq x1lliihq xxazebp xh8yej3"
+    slot="description"
+  />
+</div>
+`;
+
+exports[`Field components > renders standard text input 1`] = `
+<div>
+  <input
+    class="Field__inputStyle.base xjyslct x1um8wrh xbwtbw9 x5qxvhn x1y0btm7 xyjsr0 x1gnnqk1 xzaaa3k x1a2a7pz x1tpa1gi x18rzusy x1a241o7 x5g6463 x1ihf77i xh8yej3"
+    data-rac=""
+    value="test input value"
+  />
+</div>
+`;

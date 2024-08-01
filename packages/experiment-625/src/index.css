@@ -1,0 +1,314 @@
+/* Need to keep these here until we have refactored out all Tailwind from RAC */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Reset */
+
+/* Have wrapped each style in a `:where()`. The reason is that `:where()` has zero specificity. That makes it a good tool to use for CSS resets. They are easy to over-write without having to fight specificity.
+
+/* Creating variables that copy our Stitch Tokens. The variables are here mostly to style text nodes that may be on the page that are not wrapped in a component. What we would like to have in future is a build system in the Tokens library that produces both the StyleX document, and a documnet of vanilla CSS variables that can be used in the global scope. This would be a good way to ensure that the global scope is always in sync with the component scope. */
+
+:root {
+  --base-font-size: 16px;
+  --base-font-weight: 400;
+  --base-line-height: 1.5rem;
+  --small-font-size: 0.75rem;
+  --small-line-height: 1rem;
+  --small-letter-spacing: 0.12px;
+  --md-font-size: 0.875rem;
+  --md-line-height: 1.25rem;
+  --md-letter-spacing: 0.14px;
+  --lg-font-size: 1rem;
+  --lg-line-height: 1.5rem;
+  --lg-letter-spacing: 0px;
+  --xl-font-size: 1.25rem;
+  --xl-line-height: 2rem;
+  --xl-letter-spacing: 0px;
+  --heading-xs-font-size: 0.875rem;
+  --heading-xs-line-height: 1.25rem;
+  --heading-xs-letter-spacing: 0.25px;
+  --heading-sm-font-size: 1rem;
+  --heading-sm-line-height: 1.5rem;
+  --heading-sm-letter-spacing: 0.16px;
+  --heading-md-font-size: 1.25rem;
+  --heading-md-line-height: 2rem;
+  --heading-md-letter-spacing: 0.2px;
+  --heading-lg-font-size: 1.5rem;
+  --heading-lg-line-height: 2.5rem;
+  --heading-lg-letter-spacing: 0px;
+  --heading-xl-font-size: 2rem;
+  --heading-xl-line-height: 3rem;
+  --heading-xl-letter-spacing: 0px;
+  --heading-2xl-font-size: 2.5rem;
+  --heading-2xl-line-height: 4rem;
+  --heading-2xl-letter-spacing: 0px;
+  --color-default: #1a191b; /* colors.neutral_1100 */
+  --color-inverse: #ffffff; /* colors.neutral_0 */
+  --color-secondary: #67636a; /* colors.neutral_900 */
+  --color-disabled: rgba(28, 7, 49, 0.27); /* colorsAlpha.neutral_600 */
+  --color-link: #495be5; /* colors.peri_600 */
+  --color-link-pressed: #3947b2; /* colors.peri_700 */
+}
+:where(*) {
+  box-sizing: border-box;
+}
+:where(*:before, *:after) {
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+:where(html) {
+  -moz-tab-size: 2;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--color-inverse);
+  color: var(--color-default);
+  font-family:
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    Segoe UI Symbol,
+    'Noto Color Emoji';
+  font-feature-settings: normal;
+  font-size: var(--base-font-size);
+  font-style: normal;
+  font-variation-settings: normal;
+  font-weight: var(--base-font-weight);
+  line-height: var(--base-line-height);
+  tab-size: 2;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+:where(body) {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  text-align: inherit;
+
+}
+/* conflicting with Stitch. */
+/* :where(hr) {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+} */
+:where(abbr:where([title])) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+:where(h1) {
+  font-size: var(--heading-2xl-font-size);
+  line-height: var(--heading-2xl-line-height);
+  letter-spacing: var(--heading-2xl-letter-spacing);
+}
+:where(h2) {
+  font-size: var(--heading-xl-font-size);
+  line-height: var(--heading-xl-line-height);
+  letter-spacing: var(--heading-xl-letter-spacing);
+}
+:where(h3) {
+  font-size: var(--heading-lg-font-size);
+  line-height: var(--heading-lg-line-height);
+  letter-spacing: var(--heading-lg-letter-spacing);
+}
+:where(h4) {
+  font-size: var(--heading-md-font-size);
+  line-height: var(--heading-md-line-height);
+  letter-spacing: var(--heading-md-letter-spacing);
+}
+:where(h5) {
+  font-size: var(--heading-sm-font-size);
+  line-height: var(--heading-sm-line-height);
+  letter-spacing: var(--heading-sm-letter-spacing);
+}
+:where(h6) {
+  font-size: var(--heading-xs-font-size);
+  line-height: var(--heading-xs-line-height);
+  letter-spacing: var(--heading-xs-letter-spacing);
+}
+:where(a) {
+  /* was conflicting with Stitch link hover styles */
+  /* background-color: transparent; */
+  color: var(--color-link);
+  text-decoration: none;
+}
+:where(a:where(:hover)) {
+  color: var(--color-link-pressed);
+}
+:where(a:where(:active)) {
+  color: var(--color-link-pressed);
+}
+:where(b,
+strong) {
+  font-weight: bolder;
+}
+:where(code,
+kbd,
+samp,
+pre) {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    Liberation Mono,
+    Courier New,
+    monospace;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-size: 1em;
+}
+:where(small) {
+  font-size: var(--small-font-size);
+}
+:where(sub,
+sup) {
+  font-size: var(--small-font-size);
+  line-height: var(--small-line-height);
+  position: relative;
+  vertical-align: baseline;
+}
+:where(sub) {
+  bottom: -0.25em;
+}
+:where(sup) {
+  top: -0.5em;
+}
+:where(table) {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+/* button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+} */
+/* :where(:-moz-focusring) {
+  outline: auto;
+} */
+:where(:-moz-ui-invalid) {
+  box-shadow: none;
+}
+:where(progress) {
+  vertical-align: baseline;
+}
+:where(::-webkit-inner-spin-button,
+::-webkit-outer-spin-button) {
+  height: auto;
+}
+:where([type='search']) {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+:where(::-webkit-search-decoration) {
+  -webkit-appearance: none;
+}
+:where(::-webkit-file-upload-button) {
+  -webkit-appearance: button;
+  font: inherit;
+}
+:where(summary) {
+  display: list-item;
+}
+:where(blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre) {
+  margin: 0;
+}
+:where(fieldset) {
+  margin: 0;
+  padding: 0;
+}
+:where(legend) {
+  padding: 0;
+}
+:where(ol,
+ul,
+menu) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+:where(dialog) {
+  padding: 0;
+}
+:where(textarea) {
+  resize: vertical;
+}
+:where(input::placeholder,
+textarea::placeholder) {
+  opacity: 1;
+  color: #9ca3af;
+}
+:where(button,
+[role='button']) {
+  cursor: pointer;
+}
+:where(:disabled) {
+  cursor: default;
+}
+:where(img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object) {
+  display: block;
+  vertical-align: middle;
+}
+:where(img,
+video) {
+  max-width: 100%;
+  height: auto;
+}
+:where([hidden]) {
+  display: none;
+}

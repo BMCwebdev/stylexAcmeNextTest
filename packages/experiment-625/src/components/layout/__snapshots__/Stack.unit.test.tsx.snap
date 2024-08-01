@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Stack > renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Stack__stackStyles.base xrvj5dj x3xbxsf x1y6fwsi x193iq5w Stack__alignStyles.start x10ukxgv Stack__justifyItemsStyles.stretch xl4xnwh Stack__spaceStyles.50 xjcuxgg"
+  >
+    <div>
+      Child 1
+    </div>
+    <div>
+      Child 2
+    </div>
+    <div>
+      Child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;

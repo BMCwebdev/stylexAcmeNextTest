@@ -1,0 +1,52 @@
+import { Meta, Canvas, Controls } from '@storybook/blocks';
+import * as PopoverStories from './Popover.stories';
+
+<Meta title="Components/Popover" of={PopoverStories} />
+
+# Popover
+
+The `Popover` component is used to display a popup or tooltip with customizable content. It can be used with or without an arrow indicating its placement.
+
+## Usage
+
+```tsx
+<DialogTrigger>
+  <Button variant="icon" aria-label="Help">
+    <HelpCircle />
+  </Button>
+  <Popover {...args}>
+    <Dialog>
+      <Text size="xlarge" weight="700">
+        Help
+      </Text>
+      <Text elementType='p'>
+        For help accessing your account, please contact support.
+      </Text>
+    </Dialog>
+  </Popover>
+</DialogTrigger>
+```
+## Stories
+<Canvas of={PopoverStories.Default} />
+<Controls />
+
+### Without Arrow
+```tsx
+<DialogTrigger>
+  <Button variant="icon" aria-label="Help">
+    <HelpCircle />
+  </Button>
+  <Popover {...args}>
+    <Dialog>
+      <Text size="xlarge" weight="700">
+        Help
+      </Text>
+      <Text elementType='p'>
+        For help accessing your account, please contact support.
+      </Text>
+    </Dialog>
+  </Popover>
+</DialogTrigger>
+```
+<Canvas of={PopoverStories.WithoutArrow} />
+

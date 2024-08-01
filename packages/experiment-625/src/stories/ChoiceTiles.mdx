@@ -1,0 +1,42 @@
+import { Canvas, Meta, Controls } from '@storybook/blocks';
+import * as ChoiceTilesStories from './ChoiceTiles.stories';
+
+<Meta title="ChoiceTiles" of={ChoiceTilesStories} />
+
+# Choice Tiles
+
+Choice Tiles allow users to select an item from a visually rich list, displaying specific data like an organization's name, matching percentage, and closing date.
+
+### Usage
+
+The `ChoiceTiles` component expects an `items` prop that consists of an array of data. For now this is pretty locked down. More flexibility will be added in the future. It also expects a string provided via the `ariaLabel` prop.
+
+### Example
+
+```jsx
+<ChoiceTiles
+  ariaLabel="Organization Selection"
+  items={[
+    { id: '1', organization: 'Org A', match_percentage: '85%', close_date: '2024-05-30' },
+    { id: '2', organization: 'Org B', match_percentage: '70%', close_date: '2024-06-15' },
+    { id: '3', organization: 'Org C', match_percentage: '95%', close_date: '2024-07-20' }
+  ]}
+/>
+```
+
+By default, interacting with an item in a ListBox triggers onSelectionChange. Each item's id prop is passed to the `onSelectionChange` handler to identify the selected item.
+
+```jsx
+  const [currentChoice, setCurrentChoice] = useState('');
+  <ChoiceTiles
+    ariaLabel="Choose but choose wisely"
+    items={options}
+    onSelectionChange={(a) => setCurrentChoice((a.currentKey))}
+  />
+```
+
+***
+<Canvas of={ChoiceTilesStories.Example} />
+<Controls />
+#### Disabled Example
+<Canvas of={ChoiceTilesStories.DisabledItems} />

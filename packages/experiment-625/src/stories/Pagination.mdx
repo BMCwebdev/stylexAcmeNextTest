@@ -1,0 +1,43 @@
+import { Canvas, Meta, Controls } from '@storybook/blocks';
+import * as PaginationStories from './Pagination.stories';
+
+<Meta
+  title='Pagination'
+  of={PaginationStories}
+/>
+
+# Pagination Component
+
+The **Pagination** component provides a simple interface for paginating through data. 
+
+To use the component, include the **Pagination** component in your app, providing the `itemsPerPage` prop and a callback to handle the list change.
+
+```jsx
+import { Pagination } from './Pagination';
+
+function App() {
+  const [data, setData] = useState([]);
+
+  const handleListChange = (list) => {
+    setData(list.items);
+  };
+
+  return (
+    <div>
+      <Pagination
+        onListChange={handleListChange}
+        itemsPerPage={10}
+        url="https://jsonplaceholder.typicode.com/posts"
+      />
+      <ul>
+        {data.map(item => (
+          <li key={item.id}>{item.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+***
+<Canvas of={PaginationStories.Example} />
+<Controls />

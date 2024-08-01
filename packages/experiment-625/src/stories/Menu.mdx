@@ -1,0 +1,131 @@
+import { Meta, Canvas, Controls } from '@storybook/blocks';
+import * as MenuStories from './Menu.stories';
+
+<Meta title="Menu" of={MenuStories} />
+
+# Menu
+
+The `Menu` component is used to display a list of options or actions. A menu trigger consists of a button or other trigger element combined with a menu displayed in a popover, with a list of menu items or sections inside. Users can click, touch, or use the keyboard on the button to open the menu.
+
+`Menu` supports nested menus and can be customized with different placements.
+
+The direct children of a `Menu` component should be `MenuItem`, `Header`, or `DropdownSection` components. The `Menu` component also supports the `items` prop, which can be used to pass an array of items to be rendered as menu items.
+
+`Menu` supports sections with headings in order to group items. Sections can be used by wrapping groups of MenuItems in a `DropdownSection` component. A `Header` component may also be included to label the section. `DropdownSection` will accept a title prop to provide a header for you. If a `Header` is not provided, an aria-label should be provided for accessibility.
+
+The `Header` component can be used to provide a title for a section of menu items. The `Separator` component can be used to separate groups of menu items.  See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header) for more information about the semantics of the header element.
+
+React Aria Documentation Links:
+- [Aria docs](https://react-spectrum.adobe.com/react-aria/Menu.html)
+- [Aria API Reference](https://react-spectrum.adobe.com/react-aria/Menu.html#props)
+- [Collection Components API](https://react-spectrum.adobe.com/react-aria/collections.html)
+
+## Usage
+
+```tsx
+<MenuTrigger>
+  <MenuButton aria-label="Menu"><MenuIconFromLucide /></MenuButton>
+  <Menu>
+    <DropdownSection>
+      <Header>
+        <Text elementType="h6">Header Text</Text>
+      </Header>
+    </DropdownSection>
+    <DropdownSection xBleed={true}>
+      <MenuItem onAction={() => alert('open')}>Open</MenuItem>
+      <MenuItem onAction={() => alert('rename')}>Rename…</MenuItem>
+      <MenuItem onAction={() => alert('duplicate')}>Duplicate</MenuItem>
+      <MenuItem onAction={() => alert('share')}>Share…</MenuItem>
+      <MenuItem onAction={() => alert('delete')}>Delete…</MenuItem>
+    </DropdownSection>
+  </Menu>
+</MenuTrigger>
+```
+## Stories
+<Canvas of={MenuStories.Default} />
+<Controls />
+
+### Sections Examples
+
+Sections can be used by wrapping groups of MenuItem components in a DropdownSection component. A Header element may also be included to provide context for the section. Sections without a Header must provide an aria-label for accessibility.
+
+```tsx
+<MenuTrigger>
+  <MenuButton aria-label="Menu"><MenuIconFromLucide /></MenuButton>
+  <Menu>
+    <DropdownSection>
+      <Header>
+        <h6>Header Text</h6>
+      </Header>
+    </DropdownSection>
+    <Separator />
+    <DropdownSection xBleed={true}>
+      <MenuItem>Account settings</MenuItem>
+      <MenuItem>Create team</MenuItem>
+      <MenuItem>Command menu</MenuItem>
+      <MenuItem>Log out</MenuItem>
+    </DropdownSection>
+    <Separator />
+    <DropdownSection items={items}>
+      {item => <MenuItem key={item.id}>{item.name}</MenuItem>}
+    </DropdownSection>
+    <Separator />
+    <MenuItem>Save</MenuItem>
+    <MenuItem>Save as…</MenuItem>
+    <MenuItem>Rename…</MenuItem>
+    <MenuItem>Delete…</MenuItem>
+  </Menu>
+</MenuTrigger>
+```
+<Canvas of={MenuStories.WithSections} />
+
+### SubMenu Example
+Submenus can be created using the SubMenuTrigger component. This allows for hierarchical navigation within the menu.
+
+```tsx
+<MenuTrigger>
+  <MenuButton aria-label="Menu"><MenuIconFromLucide /></MenuButton>
+  <Menu>
+    <DropdownSection>
+      <MenuItem>Option 1</MenuItem>
+      <SubMenuTrigger>
+        <MenuItem>Submenu</MenuItem>
+        <Menu placement="right">
+          <MenuItem>Sub Option 1</MenuItem>
+          <MenuItem>Sub Option 2</MenuItem>
+          <MenuItem>Sub Option 3</MenuItem>
+        </Menu>
+      </SubMenuTrigger>
+      <MenuItem>Option 2</MenuItem>
+    </DropdownSection>
+  </Menu>
+</MenuTrigger>
+```
+<Canvas of={MenuStories.WithSubMenu} />
+
+
+### Dynamic Collections
+The Menu component follows the Collection Components API, accepting both static and dynamic collections. The examples above show static collections, which can be used when the full list of options is known ahead of time. Dynamic collections, as shown below, can be used when the options come from an external data source such as an API call or update over time.
+  
+```tsx
+const dynamicItems = [
+  { id: 1, name: 'New' },
+  { id: 2, name: 'Open' },
+  { id: 3, name: 'Close' },
+  { id: 4, name: 'Save' },
+  { id: 5, name: 'Duplicate' },
+  { id: 6, name: 'Rename' },
+  { id: 7, name: 'Move' }
+];
+
+<MenuTrigger>
+  <MenuButton aria-label="Menu"><MenuIconFromLucide /></MenuButton>
+  <Menu items={dynamicItems} onAction={(key) => alert(`Action: ${key}`)}>
+    <DropdownSection>
+      {item => <MenuItem key={item.id}>{item.name}</MenuItem>}
+    </DropdownSection>
+  </Menu>
+</MenuTrigger>
+```
+<Canvas of={MenuStories.DynamicCollections} />
+

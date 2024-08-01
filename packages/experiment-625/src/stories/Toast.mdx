@@ -1,0 +1,53 @@
+import { Canvas, Meta, Controls } from '@storybook/blocks';
+import * as ToastStories from './Toast.stories';
+
+<Meta
+  title='Toast'
+  of={ToastStories}
+/>
+
+# GlobalToastProvider Component
+
+The **GlobalToastProvider** component provides a global toast notification system using React Aria and React Stately.
+
+To use the component, simply add **GlobalToastProvider** anywhere in your app. Then you can use the **toastQueue** to add toasts.
+
+```jsx
+import { GlobalToastProvider, toastQueue } from './GlobalToastProvider';
+
+function App() {
+  return (
+    <GlobalToastProvider />
+    ...
+  );
+}
+
+// To add a toast. You can add this to an onPress event on a Button for example.
+toastQueue.add({
+  title: 'Success!',
+  description: 'This is a success toast.',
+  variant: 'success',
+});
+```
+In progress:
+* Animations
+* Ability to choose max # of Toasts (currently set to 5)
+* Ability to set priority on Toasts.
+* Programatically add, close, pause, resume.
+* Set a timeout to automatically close the toast after, in milliseconds.
+
+***
+
+### Example Usage
+<Canvas of={ToastStories.Example} />
+<Controls />
+### Info Toast
+<Canvas of={ToastStories.InfoToast} />
+### Success Toast
+<Canvas of={ToastStories.SuccessToast} />
+### Warning Toast
+<Canvas of={ToastStories.WarningToast} />
+### Critical Toast
+<Canvas of={ToastStories.CriticalToast} />
+### No Description Toast
+<Canvas of={ToastStories.NoDescriptionToast} />

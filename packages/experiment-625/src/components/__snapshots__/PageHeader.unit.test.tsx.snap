@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EndContainer Component > renders correctly 1`] = `
+<span
+  class="PageHeader__styles.endContainer x6s0dn4 x78zum5 x1wol0sm"
+>
+  <div>
+    Test Child
+  </div>
+</span>
+`;
+
+exports[`HeaderItem Component > renders correctly with hideBelow prop 1`] = `
+<span
+  class="PageHeader__styles.headerItem x6s0dn4 PageHeader__hideBelowStyles.sm xw1eazs xxt3sza"
+>
+  <div>
+    Test Child
+  </div>
+</span>
+`;
+
+exports[`HeaderItem Component > renders correctly with showAbove prop 1`] = `
+<span
+  class="PageHeader__styles.headerItem x6s0dn4 PageHeader__showAboveStyles.sm x1s85apg x7xmrfh"
+>
+  <div>
+    Test Child
+  </div>
+</span>
+`;
+
+exports[`HeaderItem Component > renders correctly without media queries 1`] = `
+<span
+  class="PageHeader__styles.headerItem x6s0dn4 x78zum5"
+>
+  <div>
+    Test Child
+  </div>
+</span>
+`;
+
+exports[`PageHeader Component > renders correctly 1`] = `
+<header
+  class="PageHeader__styles.header x6s0dn4 xais1mo x78zum5 x1wol0sm x1hf153w x1qughib xb3r6kr x1erp2uy x1ag6cl"
+>
+  <div>
+    Test Child
+  </div>
+</header>
+`;
+
+exports[`StartContainer Component > renders correctly 1`] = `
+<span
+  class="PageHeader__styles.startContainer x6s0dn4 x78zum5 x1wol0sm"
+>
+  <div>
+    Test Child
+  </div>
+</span>
+`;

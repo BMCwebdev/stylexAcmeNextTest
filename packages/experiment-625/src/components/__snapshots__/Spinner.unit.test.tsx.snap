@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Spinner > renders a basic spinner 1`] = `
+<div>
+  <div
+    class="Stack__stackStyles.base xrvj5dj x3xbxsf x1y6fwsi x193iq5w Stack__alignStyles.start x10ukxgv Stack__justifyItemsStyles.center x1o2pa38 Stack__spaceStyles.200 x15fu49g"
+  >
+    <div
+      class="Spinner__styles.spinner x1useyqa xsdox4t xvzbl3"
+    />
+    <div
+      class="Spinner__styles.text x155a4kq x5g6463 xej1d2r"
+    >
+      Loading
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Spinner > renders a spinner with custom message 1`] = `
+<div>
+  <div
+    class="Stack__stackStyles.base xrvj5dj x3xbxsf x1y6fwsi x193iq5w Stack__alignStyles.start x10ukxgv Stack__justifyItemsStyles.center x1o2pa38 Stack__spaceStyles.200 x15fu49g"
+  >
+    <div
+      class="Spinner__styles.spinner x1useyqa xsdox4t xvzbl3"
+    />
+    <div
+      class="Spinner__styles.text x155a4kq x5g6463 xej1d2r"
+    >
+      something else
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Box > renders a basic box 1`] = `
+<div>
+  <div
+    class="Box__styles.box xk3s6z2 Box__styles.paddingMedium x3pnyd4"
+  >
+    Box content
+  </div>
+</div>
+`;
+
+exports[`Box > renders a box with a border 1`] = `
+<div>
+  <div
+    class="Box__styles.box xk3s6z2 Box__styles.border x10n4xv1 Box__styles.paddingMedium x3pnyd4"
+  >
+    Box content
+  </div>
+</div>
+`;
+
+exports[`Box > renders a box with a border, radius, and large padding 1`] = `
+<div>
+  <div
+    class="Box__styles.box xk3s6z2 Box__styles.border x10n4xv1 Box__styles.radiusMedium xyjsr0 Box__styles.paddingLarge x1fzn9rj"
+  >
+    Box content
+  </div>
+</div>
+`;
+
+exports[`Box > renders a box with a colored variant 1`] = `
+<div>
+  <div
+    class="Box__styles.box Box__styles.border x10n4xv1 Box__styles.variantBlue x1fcakp xbsrw2h xc9984p Box__styles.paddingMedium x3pnyd4"
+  >
+    Box content
+  </div>
+</div>
+`;

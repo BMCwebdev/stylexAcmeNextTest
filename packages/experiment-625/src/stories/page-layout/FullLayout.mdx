@@ -1,0 +1,66 @@
+import { Meta, Canvas, Controls } from '@storybook/blocks';
+import * as FullLayoutStories from './FullLayout.stories';
+
+<Meta title='Page Layout/Full Example' of={FullLayoutStories} />
+
+# Comprehensive Layout
+
+This story demonstrates how the `PageHeader`, `SideNav`, `MainContainer`, and `ResponsiveWrapper` components work together to create a responsive layout.
+
+## Usage
+
+The `PageLayoutProvider` is used to provide context for the layout components. The `PageHeader` includes `StartContainer` and `EndContainer` with `ResponsiveWrapper` for responsive elements. The `SideNav` includes `SideNavItems` and `SideNavFooter` to demonstrate the sidebar navigation. The `MainContainer` shows where the main content would be placed. `MainContainer` will accept a `stitches` css prop which will accept a StyleX style prop to provide custom styles.
+
+### Example
+
+```jsx
+import { SideNavFooter, SideNavItems, SideNavItem } from './SideNav';
+
+const footerItems: SideNavItem[] = [
+  { icon: 'HelpCircle', label: 'Help Center', to: '/help' },
+];
+
+<PageLayoutProvider>
+  <PageHeader>
+    <StartContainer>
+      <ResponsiveWrapper hideBelow="sm">
+        <span style={{ backgroundColor: '#007BFF', color: 'white', padding: '5px' }}>Logo</span>
+      </ResponsiveWrapper>
+      <ResponsiveWrapper showAbove="md">
+        <span style={{ backgroundColor: '#28A745', color: 'white', padding: '5px' }}>Navigation</span>
+      </ResponsiveWrapper>
+    </StartContainer>
+    <EndContainer>
+      <ResponsiveWrapper>
+        <button style={{ marginRight: '10px' }}>Profile</button>
+      </ResponsiveWrapper>
+      <ResponsiveWrapper>
+        <button>Settings</button>
+      </ResponsiveWrapper>
+    </EndContainer>
+  </PageHeader>
+  <SideNav>
+    <SideNavItems
+      navItems={[
+        { icon: 'Home', label: 'Home', to: '/', isActive: true },
+        { icon: 'Gift', label: 'Gifts', to: '/gifts' },
+        { icon: 'HelpCircle', label: 'Help', to: '/help' },
+      ]}
+    />
+    <SideNavFooter>
+      <SideNavItems navItems={footerItems} />
+    </SideNavFooter>
+  </SideNav>
+  <MainContainer>
+    <h1>Main Content Area</h1>
+    <p>This is where the main content of the page would go.</p>
+  </MainContainer>
+  <PageFooter>
+    <span>© 2024 Bonterra</span>
+    <span>Terms of Service</span>
+    <span>Privacy Policy</span>
+  </PageFooter>
+</PageLayoutProvider>
+```
+<Canvas of={FullLayoutStories.FullLayout} />
+<Controls />

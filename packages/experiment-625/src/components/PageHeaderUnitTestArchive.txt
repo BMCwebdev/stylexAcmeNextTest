@@ -1,0 +1,42 @@
+import React from 'react';
+import { describe, it, expect } from 'vitest';
+import { render } from '@testing-library/react';
+import { PageHeader, StartContainer, EndContainer, HeaderItem } from '../components/PageHeader';
+
+describe('PageHeader Component', () => {
+  it('renders correctly', () => {
+    const { container } = render(<PageHeader><div>Test Child</div></PageHeader>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});
+
+describe('StartContainer Component', () => {
+  it('renders correctly', () => {
+    const { container } = render(<StartContainer><div>Test Child</div></StartContainer>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});
+
+describe('EndContainer Component', () => {
+  it('renders correctly', () => {
+    const { container } = render(<EndContainer><div>Test Child</div></EndContainer>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});
+
+describe('HeaderItem Component', () => {
+  it('renders correctly without media queries', () => {
+    const { container } = render(<HeaderItem><div>Test Child</div></HeaderItem>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('renders correctly with hideBelow prop', () => {
+    const { container } = render(<HeaderItem hideBelow="sm"><div>Test Child</div></HeaderItem>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('renders correctly with showAbove prop', () => {
+    const { container } = render(<HeaderItem showAbove="sm"><div>Test Child</div></HeaderItem>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});
