@@ -18,7 +18,6 @@ import {
   composeRenderProps,
   useTableOptions,
 } from 'react-aria-components';
-import { twMerge } from 'tailwind-merge';
 import { tv } from 'tailwind-variants';
 import { Checkbox } from './Checkbox';
 import { composeTailwindRenderProps, focusRing } from './utils';
@@ -86,10 +85,6 @@ export function TableHeader<T extends object>(props: TableHeaderProps<T>) {
   return (
     <AriaTableHeader
       {...props}
-      className={twMerge(
-        'sticky top-0 z-10 bg-gray-100/60 dark:bg-zinc-700/60 backdrop-blur-md supports-[-moz-appearance:none]:bg-gray-100 dark:supports-[-moz-appearance:none]:bg-zinc-700 forced-colors:bg-[Canvas] rounded-t-lg border-b dark:border-b-zinc-700',
-        props.className,
-      )}
     >
       {/* Add extra columns for drag and drop and selection. */}
       {allowsDragging && <Column />}

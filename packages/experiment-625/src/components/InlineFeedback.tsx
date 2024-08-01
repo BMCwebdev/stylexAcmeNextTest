@@ -10,7 +10,7 @@ import {
 import {
   colorsIcon,
   colorsText,
-} from '@/stitch-tokens/colors.stylex';
+} from '@brianAcme/stitch-tokens/colors.stylex';
 import { sizes } from '@brianAcme/stitch-tokens/sizes.stylex';
 import { fonts } from '@brianAcme/stitch-tokens/fonts.stylex';
 
