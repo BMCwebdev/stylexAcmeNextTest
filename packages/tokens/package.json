@@ -1,0 +1,11 @@
+{
+  "name": "@bmcwebdev/tokens",
+  "version": "0.0.1",
+  "description": "Design Tokens",
+  "exports": {
+    "./coreTokens.stylex": "./coreTokens.stylex.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
